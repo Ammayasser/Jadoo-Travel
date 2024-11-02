@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <!-- Add Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Updated navbar structure -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Jad<span>oo</span></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#category">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#flights">Flights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bookings">Bookings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link login-btn" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link signup-btn" href="signup.html">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h3>Best Destinations Around The World</h3>
+              <h1>Travel, enjoy and live a new and full life</h1>
+              <p>
+                Built Wicket longer admire do Barton vanity itself do in it.
+                Preferred to sportsmen it engrossed listening. Park gate sell
+                they west hard for the.
+              </p>
+              <div class="hero-buttons">
+                <button class="find-more-btn">Find out more</button>
+                <div class="play-demo">
+                  <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <span>Play Demo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img
+                src="travelling.jpg"
+                alt="Traveler with bag"
+                class="img-fluid main-traveler"
+              />
+
+              <img
+                src="https://www.freeiconspng.com/uploads/airplane-png-30.png"
+                alt="Small plane"
+                class="small-plane plane1"
+              />
+              <img
+                src="https://www.freeiconspng.com/uploads/airplane-png-30.png"
+                alt="Small plane"
+                class="small-plane plane2"
+              />
+              <img
+                src="https://www.freeiconspng.com/uploads/airplane-png-30.png"
+                alt="Small plane"
+                class="small-plane plane3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services py-5" id="category">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h3 class="category-subtitle">Category</h3>
+          <h2 class="section-title">We Offer Best Services</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="service-card text-center">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/201/201623.png"
+                alt="Weather"
+                class="mb-4"
+              />
+              <h2>Calculated Weather</h2>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="service-card text-center">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3125/3125713.png"
+                alt="Flights"
+                class="mb-4"
+              />
+              <h2>Best Flights</h2>
+              <p>Engrossed listening. Park gate sell they west hard for the.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="service-card text-center">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/826/826070.png"
+                alt="Events"
+                class="mb-4"
+              />
+              <h2>Local Events</h2>
+              <p>Barton vanity itself do in it. Preferd to men it engrossed.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="service-card text-center">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3774/3774278.png"
+                alt="Customization"
+                class="mb-4"
+              />
+              <h2>Customization</h2>
+              <p>
+                We deliver outsourced aviation services for military customers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="destinations" class="destinations py-5">
+      <div class="container">
+        <div class="text-center mb-5 section-header">
+          <h3 class="category-subtitle wow fadeInUp">Top Selling</h3>
+          <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">
+            Top Destinations
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="destination-card wow fadeInUp"
+              data-wow-delay="0.3s"
+              onclick="showDestinationDetails('rome')"
+            >
+              <div class="destination-img">
+                <img
+                  src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop"
+                  alt="Rome"
+                  class="img-fluid"
+                />
+                <div class="destination-overlay">
+                  <div class="destination-info">
+                    <div class="destination-location">
+                      <h5>Italy</h5>
+                      <p>Rome</p>
+                    </div>
+                    <div class="destination-price">
+                      <h5>$5,42k</h5>
+                    </div>
+                  </div>
+                  <div class="destination-meta">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>10 Days Trip</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="destination-card wow fadeInUp"
+              data-wow-delay="0.4s"
+              onclick="showDestinationDetails('london')"
+            >
+              <div class="destination-img">
+                <img
+                  src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1000&auto=format&fit=crop"
+                  alt="London"
+                  class="img-fluid"
+                />
+                <div class="destination-overlay">
+                  <div class="destination-info">
+                    <div class="destination-location">
+                      <h5>UK</h5>
+                      <p>London</p>
+                    </div>
+                    <div class="destination-price">
+                      <h5>$4.2k</h5>
+                    </div>
+                  </div>
+                  <div class="destination-meta">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>12 Days Trip</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="destination-card wow fadeInUp"
+              data-wow-delay="0.5s"
+              onclick="showDestinationDetails('new-york')"
+            >
+              <div class="destination-img">
+                <img
+                  src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?q=80&w=1000&auto=format&fit=crop"
+                  alt="New York"
+                  class="img-fluid"
+                />
+                <div class="destination-overlay">
+                  <div class="destination-info">
+                    <div class="destination-location">
+                      <h5>USA</h5>
+                      <p>New York</p>
+                    </div>
+                    <div class="destination-price">
+                      <h5>$4.5k</h5>
+                    </div>
+                  </div>
+                  <div class="destination-meta">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>14 Days Trip</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination Details Modal -->
+      <div id="destinationModal" class="destination-modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <div class="modal-body">
+            <div class="destination-gallery">
+              <div class="main-image">
+                <img id="modalMainImage" src="" alt="Destination" />
+              </div>
+              <div class="thumbnail-gallery" id="thumbnailGallery">
+                <!-- Thumbnails will be inserted by JavaScript -->
+              </div>
+            </div>
+
+            <div class="destination-details">
+              <h2 id="modalTitle"></h2>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(4.5/5 from 234 reviews)</span>
+              </div>
+
+              <div class="key-details">
+                <div class="detail-item">
+                  <i class="fas fa-clock"></i>
+                  <span id="modalDuration"></span>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-users"></i>
+                  <span>Max 20 people</span>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-language"></i>
+                  <span>English, Italian</span>
+                </div>
+              </div>
+
+              <div class="price-section">
+                <h3 id="modalPrice"></h3>
+                <span>per person</span>
+              </div>
+
+              <div class="description" id="modalDescription">
+                <!-- Description will be inserted by JavaScript -->
+              </div>
+
+              <button class="book-now-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="booking-steps" id="flights">
+      <div class="booking-container">
+        <div class="booking-wrapper">
+          <!-- Left Column -->
+          <div class="steps-content">
+            <p class="subtitle">Easy and Fast</p>
+            <h1 class="title">Book Your Next Trip In 3 Easy Steps</h1>
+
+            <div class="step-row">
+              <div class="step-icon">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/854/854878.png"
+                  alt="Choose Destination"
+                />
+              </div>
+              <div class="step-info">
+                <h2>Choose Destination</h2>
+                <p>
+                  Choose your favorite place. We have thousands of options for
+                  you.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-row">
+              <div class="step-icon">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2527/2527857.png"
+                  alt="Make Payment"
+                />
+              </div>
+              <div class="step-info">
+                <h2>Make Payment</h2>
+                <p>
+                  After finding the perfect place, make your payment securely.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-row">
+              <div class="step-icon">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/3125/3125713.png"
+                  alt="Reach Airport"
+                />
+              </div>
+              <div class="step-info">
+                <h2>Reach Airport on Selected Date</h2>
+                <p>
+                  Get ready for your trip and arrive at the airport on time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="trip-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1000&auto=format&fit=crop"
+                alt="Greece"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Trip To Greece</h3>
+              <p class="trip-date">14-29 June | by John Smith</p>
+
+              <div class="trip-icons">
+                <i class="fas fa-paper-plane"></i>
+                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-clock"></i>
+              </div>
+
+              <div class="trip-footer">
+                <div class="people-going">
+                  <i class="fas fa-users"></i>
+                  <p>24 people going</p>
+                </div>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials-wrapper">
+          <!-- Left Column -->
+          <div class="testimonials-header">
+            <h3>Testimonials</h3>
+            <h1>What People Say About Us</h1>
+            <div class="testimonial-circles">
+              <span class="circle active"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Mike Taylor"
+              />
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-nav">
+                <button class="nav-btn prev-btn">
+                  <i class="fas fa-chevron-up"></i>
+                </button>
+                <button class="nav-btn next-btn">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+              </div>
+              <p>
+                "On the Windows talking painted pasture yet its express parties
+                use. Sure last upon he same as knew next. Of believed or
+                diverted no rejoiced. End friendship sufficient assistance can
+                prosperous met. As game he show it park do. Was has unknown few
+                certain ten promise."
+              </p>
+              <div class="testimonial-author">
+                <h4>Mike Taylor</h4>
+                <p>Lahore, Pakistan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center mb-5">
+            <h3>Our Trusted Partners</h3>
+          </div>
+          <div class="col-12">
+            <div class="brands-wrapper">
+              <div class="brand-item">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Emirates_logo.svg"
+                  alt="Emirates"
+                />
+              </div>
+              <div class="brand-item">
+                <img
+                  src="https://1000logos.net/wp-content/uploads/2021/11/Expedia-Logo.png"
+                  alt="Expedia"
+                />
+              </div>
+
+              <div class="brand-item">
+                <img
+                  src="https://1000logos.net/wp-content/uploads/2020/03/Qatar-Airways-Logo.png"
+                  alt="Qatar Airways"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-section" id="bookings">
+      <div class="container">
+        <div class="subscribe-wrapper">
+          <div class="send-icon-float">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2>
+                Subscribe to get information, latest news and other interesting
+                offers about Cobham
+              </h2>
+              <div class="subscribe-form">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="far fa-envelope"></i>
+                  </span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your email"
+                    aria-label="Your email"
+                  />
+                  <button class="subscribe-btn" type="button">
+                    Subscribe <i class="fas fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Logo and Description -->
+        <div class="footer-column brand-col">
+          <h1 class="footer-logo">Jadoo</h1>
+          <p>Book your trip in minutes, get full control for much longer.</p>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-column">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Mobile</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="footer-column">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="#">Help/FAQ</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Affiliates</a></li>
+          </ul>
+        </div>
+
+        <!-- More Links and App Downloads -->
+        <div class="footer-column">
+          <h5>More</h5>
+          <ul>
+            <li><a href="#">Travel Tips</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+
+          <div class="app-downloads">
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                alt="App Store"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Play Store"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>© 2024 Jadoo. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
